@@ -1,13 +1,13 @@
 import React from 'react'
-import styled  from 'styled-components'
-import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-import{useNavigate} from 'react-router-dom'
+import { styled } from 'styled-components';
 import Background from '../Components/Background';
-import Header from '../Components/Header';
+import { useNavigate } from 'react-router-dom';
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+
 
 export default function Home() {
 
-  const navigate = useNavigate();
+        const navigate = useNavigate();
 
 const changeToAbout=()=>{
   navigate('/About');
@@ -19,11 +19,11 @@ const changeToAbout=()=>{
   return (
     
     <Container >
-      <Header />
+    
       <div className="Home">
         <div className='lineOne'>
-        <h1>INVEST IN BITCOIN EASY WAY TO TRADE BITCOIN</h1>
-        <h2>Invest In Current Trending Market</h2>
+        <h1>INVEST IN BITCOIN EASY WAY TO TRADE BITCOIN</h1><br/>
+        <h2>Invest In Current Trending Market</h2><br />
         <h4>Many people are struggling to grasp the concept of Bitcoin after it became a household name. Over the recent years, Bitcoin has evolved from an underworld virtual currency to a new investment craze.</h4>
         </div>
       <div className="Account">
@@ -45,84 +45,91 @@ const changeToAbout=()=>{
           <div className='bottom-footer'>
           
             <div className="col">
-              <h4>ufyu</h4>
-              <h4>ufyu</h4>
-              <h4>ufyu</h4>
-              <h4>ufyu</h4>
-              <h4>ufyu</h4>
+              <h3>Company</h3>
+              <h5>About</h5>
+              <h5>Mession & Vision</h5>
+              <h5>Location</h5>
+              <h5>Contuct Us</h5>
             </div>
             <div className="col-2">
-              <h4>okijuhygrf</h4>
-              <h4>okijuhygrf</h4>
-              <h4>okijuhygrf</h4>
-              <h4>okijuhygrf</h4>
-              <h4>okijuhygrf</h4>
+            <h3>Servires</h3>
+              <h5>NFT Marketplace</h5>
+              <h5>Crypto Marketing</h5>
+              <h5>Mobile App Design</h5>
+              <h5>Outsourcing</h5>
             </div>
             <div className="col-3">
-              <h4>okijuhygtfr</h4>
-              <h4>okijuhygtfr</h4>
-              <h4>okijuhygtfr</h4>
-              <h4>okijuhygtfr</h4>
-              <h4>okijuhygtfr</h4>
+            <h3>Solutions</h3>
+              <h5>LMS</h5>
+              <h5>AR/VR</h5>
+              <h5>Enterprise Solutions</h5>
+              <h5>Startup Products</h5>
             </div>
-           
-          
-      
+            <div className="col-4">
+             <p>SC0-45 , Chandigarh</p>
+             <p>Sector - 17</p>
+            </div>
     
           </div>
       </div>
-      <Background />
-       
-      
-      
+    
+
+
+
+<Background />
     </Container>
-      
   )
 }
 
 
-const Container=styled.div`
+const Container = styled.div`
+
+height:10rem;
+width:10rem;
+
 
 .Home{
+position:absolute;
+text-align:center;
+color:#ffffff;
+}
+.lineOne{
+padding:3rem;
 
-  margin:5%;
- 
-  padding:3%;
-  position:absolute;
-  color:white;
+font-family:  Georgia, 'Times New Roman', Times, serif;
+text-align:center;
+
 }
 .Account{
   margin-top:3%;
   background-color:rgba(0,0,7,.5);
   color:white;
+  margin:5rem;
   text-align:center;
   padding:1%;
   input{
     height:1.5%;
   }
 }
-
-
-
-.lineOne{
-font-family:  Georgia, 'Times New Roman', Times, serif;
-text-align:center;
-  
-}
-
-
-
-
-  .bottom-footer{
+.bottom-footer{
  
- color:#000000;
+
+ color:#ffffff;
  display:flex;
- flex-direction:column;
- 
+ padding:2rem;
+ background-color:black;
+ flex-direction:row;
+ justify-content:space-evenly;
  
  }
 
 
 
-`;
+ @media screen and (max-width: 768px){
 
+} 
+
+
+
+
+`;

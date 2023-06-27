@@ -1,22 +1,36 @@
 import React from 'react'
 import styled from 'styled-components';
-import bitcoin from '../Pictures/bitcoin.png';
+import Bitcoin from '../Pictures/bitcoin.png'
 
 
 export default function Aboutimage() {
   return (
     <Container>
-
-<img className='bitscoin' src={bitcoin} alt='bitCoin' />
+<img src={Bitcoin} alt=' ' className='AboutImg' />
     </Container>
   )
 }
 
 
-const Container = styled.div`
-.bitscoin{
-    height:100%;
-    width:100%;
-    
+const Container =styled.div`
+
+.AboutImg{
+  height:70rem;
+width:auto;
+
 }
+
+@media screen and (max-width: 768px){
+.AboutImg{
+  height:100rem;
+  width:48rem;
+}
+@media screen and (max-width: 416px){
+  .AboutImg{
+  height:100rem;
+  width:26rem;
+}
+}
+
+} 
 `;
