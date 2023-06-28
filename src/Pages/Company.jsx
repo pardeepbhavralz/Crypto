@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components';
 import BlueCoin from '../Pictures/cryptoblue.png';
-
+import video from '../Pictures/video.mp4'
 
 
 export default function Company() {
@@ -22,8 +22,35 @@ export default function Company() {
           To sum up, these services offer a better environment for crypto management.</p>
       </div>
       </div>
+      <div className="videocoin">
+         <video className='coinvideo' src={video}  autoPlay loop  />
       </div>
-      
+      </div>
+      <div className="provides">
+        <div className="onepro">
+<h2>Crypto Marketing</h2>
+<li>Engage with influencers</li>
+<li>Content marketing</li>
+<li>Social media presence</li>
+<li>Social media presences</li>
+        </div>
+        <div className="twopro">
+<h2>Mession & Vision</h2>
+<li>Secure and Efficient Transactions</li>
+<li>Privacy and Data Protection</li>
+<li>Financial Empowerment</li>
+<li>Global Adoption</li>
+
+        </div>
+        <div className="threepro">
+<h2>Startup Products</h2>
+<li>Security and Trus</li>
+<li>User-Friendly Interface</li>
+<li>Partnerships and Integration</li>
+<li>Scalability and Performance</li>
+
+        </div>
+      </div>
 
       </div>
     </Container>
@@ -52,8 +79,27 @@ color:#ffffff;
 padding:1rem;
 font-size:1.4rem;
 }
-}
 
+}
+.coinvideo{
+  position:absolute;
+  justify-content:center;
+  margin-top:30rem; 
+  margin-left:21rem;
+  width:50rem;
+  border:.3rem solid white;
+}
+.provides{
+  position:absolute;
+  margin-top:60rem; 
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin-left:15rem;
+  gap:10rem;
+  
+
+}
 
 
 @media screen and (max-width: 768px){
